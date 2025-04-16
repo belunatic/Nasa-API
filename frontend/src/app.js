@@ -1,6 +1,6 @@
 async function fetchPhotoOfTheDay() {
 	try {
-		const response = await fetch("http://localhost:5000/");
+		const response = await fetch("https://nasa-api-backend-a5qj.onrender.com/");
 		const data = await response.json();
 		displayPhoto(data);
 	} catch (error) {
