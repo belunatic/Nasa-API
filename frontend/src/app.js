@@ -1,6 +1,3 @@
-const apiKey = "VuCGuqdpejYWKdEHgVCPij10REDkb5vXLhT"; // Replace with your NASA API key
-const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
-
 async function fetchPhotoOfTheDay() {
 	try {
 		const response = await fetch("http://localhost:5000/");
