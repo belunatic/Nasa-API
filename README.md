@@ -20,11 +20,7 @@ A one-page application that fetches and displays NASA's Photo of the Day, along 
    ```bash
    npm install
    ```
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-4. Open the HTML file in the browser. Endure the backend is running first.
+3. Open the HTML file in the browser. Endure the backend is running first.
 
 ### Backend
 
