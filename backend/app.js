@@ -7,7 +7,10 @@ app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 app.get("/", async (req, res) => {
-	res.send(`this is the api ${process.env.NASA_API_KEY}`);
+	const result = await axios.get(
+		`https://api.nasa.gov/planetary/apod?api_key=${process.env.NASA_API_KEY}`
+	);
+	res.json(result.data);
 });
 
 app.listen(PORT, () => {
