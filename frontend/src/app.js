@@ -18,6 +18,7 @@ function displayPhoto(data) {
 
 	photoContainer.style.backgroundImage = `url(${data.url})`;
 	photoContainer.style.backgroundSize = "cover";
+	photoContainer.style.backgroundPosition = "center center";
 	titleElement.textContent = data.title;
 	captionElement.textContent = data.explanation;
 }
