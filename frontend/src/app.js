@@ -11,6 +11,14 @@ async function fetchPhotoOfTheDay() {
 	}
 }
 
+/**
+ * Updates the photo display on the webpage with the provided data.
+ *
+ * @param {Object} data - The data object containing information about the photo.
+ * @param {string} data.url - The URL of the photo to be displayed.
+ * @param {string} data.title - The title of the photo.
+ * @param {string} data.explanation - The explanation or caption for the photo.
+ */
 function displayPhoto(data) {
 	const photoContainer = document.getElementById("photo-container");
 	const titleElement = document.getElementById("photo-title");
