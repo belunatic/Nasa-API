@@ -1,7 +1,10 @@
+const loadingText = document.getElementById("loading-text");
+
 async function fetchPhotoOfTheDay() {
 	try {
 		const response = await fetch("https://nasa-api-backend-a5qj.onrender.com/");
 		const data = await response.json();
+		loadingText.style.display = "none";
 		displayPhoto(data);
 	} catch (error) {
 		console.error("Error fetching the photo of the day:", error);
